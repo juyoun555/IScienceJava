@@ -7,7 +7,7 @@ public class StringTest {
 		String year = "2017";
 		System.out.println(name + " : " + year);
 		System.out.println(year + "³â");
-		int intKing = Integer.parseInt(King);
+		int intKing = Integer.parseInt(king);
 		System.out.println(intKing + year);
 		
 	}
