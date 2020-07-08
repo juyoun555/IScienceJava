@@ -15,7 +15,9 @@ public class Movie {
 	}
 	
 	Movie(String title, String director, String genre){
-		Movie(title, director);
+		this.director = director;
+		this.title = title;
 		this.genre = genre;
 	}
+
 }
