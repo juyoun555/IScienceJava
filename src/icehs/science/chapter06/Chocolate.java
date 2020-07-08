@@ -10,9 +10,19 @@ public class Chocolate {
 	int caculateTotalPrice(int count) {
 		return count * price;
 	}
-	void changeChocolateInfo(String newName, int newPrice) {
-		name = newName;
-		price = newPrice;
+	int caculateTotalPrice(int count, double discount) {
+		return (int)(count * price * (100- discount) / 100 );
+	}
+	void changeChocolateInfo(String name, int price) {
+		this.name = name;
+		this.price = price;
+		this.printChocolateInfo();
+	}
+	void changeChocolateInfo(String name, String type, int price) {
+		this.name = name;
+		this.price = price;
+		this.type = type;
+		this.printChocolateInfo();
 	}
 	void printChocolateInfo() {
 		System.out.println("이름 : " + name + ", 종류 : " 

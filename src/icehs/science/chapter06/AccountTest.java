@@ -8,6 +8,7 @@ public class AccountTest {
 		acc.balance = 10000;
 		acc.printAccountInfo();
 		acc.deposit(20000);
+		acc.deposit(-20000);
 		acc.withdraw(45000);
 	}
 }
